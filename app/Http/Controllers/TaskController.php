@@ -52,7 +52,7 @@ class TaskController extends BaseController
 
     // If validation fails, return an error response
      if ($validator->fails()) {
-        return response()->json($validator->errors(), 400);
+        return response()->json($validator->errors(), 401);
       }
 
     // Check for duplicate task before creating
